@@ -1,4 +1,5 @@
 import lesson_5_module
+import dirty_func
 
 def test_one():
     assert lesson_5_module.one(17)
@@ -14,3 +15,9 @@ def test_four():
 
 def test_five():
     assert lesson_5_module.five(28) == 14
+
+def test_f():
+    assert dirty_func.f(['Мотоцикл', 'Семена'], 1) == ['Семена']
+
+def test_f_two():
+    assert dirty_func.f_two(3) == 3
